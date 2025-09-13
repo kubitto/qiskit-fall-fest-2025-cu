@@ -26,18 +26,20 @@ jobs:
         with:
           node-version: '18'
           cache: 'npm'
-          cache-dependency-path: './package-lock.json'
+          cache-dependency-path: './qiskit-fall-fest-website/package-lock.json'
       
       - name: Install dependencies
         run: npm ci
+        working-directory: ./qiskit-fall-fest-website
       
       - name: Build site
         run: npm run build
+        working-directory: ./qiskit-fall-fest-website
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist
+          path: ./qiskit-fall-fest-website/dist
 
   deploy:
     environment:
