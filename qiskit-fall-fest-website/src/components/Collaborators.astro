@@ -1,0 +1,53 @@
+---
+// Collaborators data with their logos and links
+const collaborators = [
+	{
+		name: "Telkom University",
+		logo: "/tel-u.png",
+		link: "https://www.telkomuniversity.ac.id/"
+	},
+	{
+		name: "BRIN-Q",
+		logo: "/brin-q.png",
+		link: "https://brin.go.id/en"
+	},
+	{
+		name: "UMSIDA",
+		logo: "/umsida.png",
+		link: "https://www.umsida.ac.id/"
+	},
+	{
+		name: "Kubitto",
+		logo: "/kubitto.svg",
+		link: "https://www.kubitto.com"
+	}
+];
+---
+
+<section class="py-16 bg-gray-50">
+	<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+		<div class="text-center mb-12">
+			<h2 class="text-3xl font-bold text-gray-900 mb-4">Our Collaborators</h2>
+			<p class="text-lg text-gray-600 max-w-2xl mx-auto">
+				We're proud to partner with leading institutions and organizations in quantum computing and technology.
+			</p>
+		</div>
+		
+		<div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
+			{collaborators.map((collaborator) => (
+				<a 
+					href={collaborator.link}
+					target="_blank"
+					rel="noopener noreferrer"
+					class="group flex items-center justify-center p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105"
+				>
+					<img 
+						src={collaborator.logo} 
+						alt={collaborator.name}
+						class="h-16 w-auto object-contain group-hover:opacity-80 transition-opacity duration-300"
+					/>
+				</a>
+			))}
+		</div>
+	</div>
+</section>

@@ -1,0 +1,121 @@
+---
+// Hero section component
+---
+
+<section id="home" class="relative bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 text-white overflow-hidden">
+	<!-- Background Pattern -->
+	<div class="absolute inset-0 opacity-10">
+		<div class="absolute inset-0" style="background-image: radial-gradient(circle at 25% 25%, #ffffff 2px, transparent 2px), radial-gradient(circle at 75% 75%, #ffffff 2px, transparent 2px); background-size: 50px 50px;"></div>
+	</div>
+	
+	<div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
+		<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+			<!-- Content -->
+			<div class="text-center lg:text-left">
+				<div class="mb-6">
+					<h1 class="text-4xl lg:text-6xl font-bold mb-2">
+						<span class="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+							Qiskit
+						</span>
+						<br>
+						<span class="text-white">Fall Fest</span>
+					</h1>
+					<p class="text-xl text-purple-200 font-semibold">2025</p>
+				</div>
+				
+				<p class="text-xl lg:text-2xl text-purple-100 mb-6 leading-relaxed">
+					The world's largest collection of student-run quantum computing events
+				</p>
+				
+				<div class="space-y-4 mb-8">
+					<div class="flex items-center justify-center lg:justify-start space-x-3">
+						<svg class="h-6 w-6 text-purple-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+						</svg>
+						<span class="text-purple-100">Cyber University, Jakarta</span>
+					</div>
+					<div class="flex items-center justify-center lg:justify-start space-x-3">
+						<svg class="h-6 w-6 text-purple-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3a1 1 0 011-1h6a1 1 0 011 1v4h3a2 2 0 012 2v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9a2 2 0 012-2h3z" />
+						</svg>
+						<span class="text-purple-100">September - November 2025</span>
+					</div>
+					<div class="flex items-center justify-center lg:justify-start space-x-3">
+						<svg class="h-6 w-6 text-purple-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z" />
+						</svg>
+						<span class="text-purple-100">Workshops • Training • Hackathon</span>
+					</div>
+				</div>
+				
+				<div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+					<a href="#register" class="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-bold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
+						Register Now
+					</a>
+					<a href="#schedule" class="border-2 border-purple-300 text-purple-100 hover:bg-purple-300 hover:text-purple-900 font-bold py-4 px-8 rounded-lg transition-all duration-300">
+						View Schedule
+					</a>
+				</div>
+			</div>
+			
+			<!-- Visual Element -->
+			<div class="flex flex-col items-center lg:items-end space-y-8">
+				<!-- Logos -->
+				<div class="grid grid-cols-3 gap-4 mb-4 items-center">
+					<div class="flex justify-center">
+						<img src="/Badge/Badge_Dark.svg" alt="Qiskit Fall Fest 2025" class="h-24 w-24 object-contain" />
+					</div>
+					<div class="flex justify-center">
+						<img src="/main-organizer-logo.png" alt="Cyber University" class="h-32 w-32 object-contain" />
+					</div>
+					<div class="col-span-2 flex justify-center">
+						<div class="bg-white rounded-lg p-4 shadow-md">
+							<img src="/IBM Quantum Logo.png" alt="IBM Quantum" class="h-32 w-auto object-contain" />
+						</div>
+					</div>
+				</div>
+				<div class="relative">
+					<!-- Quantum Circuit Visualization -->
+					<div class="w-80 h-80 relative">
+						<!-- Animated quantum circuit lines -->
+						<svg class="w-full h-full" viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<!-- Circuit lines -->
+							<line x1="40" y1="80" x2="280" y2="80" stroke="#a855f7" stroke-width="2" class="animate-pulse" />
+							<line x1="40" y1="120" x2="280" y2="120" stroke="#a855f7" stroke-width="2" class="animate-pulse" style="animation-delay: 0.5s" />
+							<line x1="40" y1="160" x2="280" y2="160" stroke="#a855f7" stroke-width="2" class="animate-pulse" style="animation-delay: 1s" />
+							<line x1="40" y1="200" x2="280" y2="200" stroke="#a855f7" stroke-width="2" class="animate-pulse" style="animation-delay: 1.5s" />
+							<line x1="40" y1="240" x2="280" y2="240" stroke="#a855f7" stroke-width="2" class="animate-pulse" style="animation-delay: 2s" />
+							
+							<!-- Quantum gates -->
+							<rect x="80" y="70" width="20" height="20" fill="#ec4899" rx="2" class="animate-bounce" />
+							<rect x="140" y="110" width="20" height="20" fill="#8b5cf6" rx="2" class="animate-bounce" style="animation-delay: 0.3s" />
+							<rect x="200" y="150" width="20" height="20" fill="#06b6d4" rx="2" class="animate-bounce" style="animation-delay: 0.6s" />
+							<rect x="120" y="190" width="20" height="20" fill="#10b981" rx="2" class="animate-bounce" style="animation-delay: 0.9s" />
+							<rect x="180" y="230" width="20" height="20" fill="#f59e0b" rx="2" class="animate-bounce" style="animation-delay: 1.2s" />
+							
+							<!-- Entanglement connections -->
+							<path d="M90 90 Q160 130 140 130" stroke="#ec4899" stroke-width="2" fill="none" class="animate-pulse" style="animation-delay: 0.7s" />
+							<path d="M150 130 Q190 170 210 170" stroke="#8b5cf6" stroke-width="2" fill="none" class="animate-pulse" style="animation-delay: 1.4s" />
+						</svg>
+						
+						<!-- Floating particles -->
+						<div class="absolute inset-0">
+							<div class="absolute top-10 left-10 w-2 h-2 bg-purple-400 rounded-full animate-ping"></div>
+							<div class="absolute top-20 right-16 w-3 h-3 bg-pink-400 rounded-full animate-pulse" style="animation-delay: 1s"></div>
+							<div class="absolute bottom-20 left-16 w-2 h-2 bg-blue-400 rounded-full animate-ping" style="animation-delay: 2s"></div>
+							<div class="absolute bottom-10 right-10 w-3 h-3 bg-green-400 rounded-full animate-pulse" style="animation-delay: 0.5s"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Scroll indicator -->
+		<div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+			<svg class="w-6 h-6 text-purple-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+			</svg>
+		</div>
+	</div>
+</section>
