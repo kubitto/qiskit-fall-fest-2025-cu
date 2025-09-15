@@ -5,8 +5,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://kubitto.github.io',
-  base: '/qiskit-fall-fest-2025-cu',
+  site: 'https://qiskitfallfest.cyber-univ.ac.id',
   vite: {
     plugins: [tailwindcss()]
   }
